@@ -49,7 +49,7 @@ var plantilla = "<div>" +
 });
 */
 $(document).ready(function() {
-    $.get("http://localhost:3001/demo.json",
+    $.get(window.location.href + "demo.json",
         function(response) {
             $("#datos").html(plantilla
                 .replace("__nombre__", response.nombre)
